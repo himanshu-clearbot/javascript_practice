@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>keydown</title>
+</head>
+</body>
+   <h3> Using the <i> KeyPress </i> event to detect whenever user presses the enter. </h3>
+
+   <p> Enter some text in the text box below and hit enter button </p>
+
+   <input type = "text" id = "text_input">
+   <br> <br>
+   <button type = "submit" onclick = "submitInput()"> Submit </button>
+   <!-- <div id = "output"> </div> -->
+</body>
+   <script>
+    //   let output = document.getElementById('output');
+      let input = document.getElementById('text_input');
+      // function for submitInput button
+      function submitInput() {
+         input.value = "";
+         output.innerHTML += "Input value submitted!";
+      }
+
+      // function to detect keypress event
+      input.addEventListener("keypress", function (event) {
+         // detect event key
+         if (event.keyCode == 13) {
+            input.value = "";
+            output.innerHTML += "<br>Input value submitted!";
+            alert("Button code executed.");
+         }
+      });
+   </script>
+</html>
+
+<!-- let btn = document.getElementById("btn");
+function clicks()
+{
+    // alert('button clicks');
+    console.log('dd');
+
+}
+
+btn.addEventListener('click',clicks);
+
+// btn.addEventListener('keydown',checkkey);
+
+// function checkkey(event)
+// {
+//     a = event.key
+//     if (a=='Enter')
+//     {
+//         alert('enter is pressed');
+
+//     }
+// }
+
+// window.addEventListener('keydown',checkkey);
+
+// function checkkey(event)
+// {
+//     console.log(event.key);
+// } -->

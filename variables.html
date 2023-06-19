@@ -1,0 +1,46 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Variables</title> 
+
+    </head>
+
+    <body>
+        <button onclick="
+        console.log(`quanity: ${cartQuanity}`);">show quantity</button>
+        
+        <button onclick="
+        cartQuanity=cartQuanity+1;
+        console.log(`quanity: ${cartQuanity}`)
+        ">Add to cart</button>
+
+        <button onclick="
+        cartQuanity=cartQuanity+2;
+        console.log(`quanity: ${cartQuanity}`)
+        ">+2</button>
+        
+        <button onclick="
+        cartQuanity=cartQuanity+3;
+        console.log(`quanity: ${cartQuanity}`)
+        ">+3</button>
+        
+        <button onclick="
+        cartQuanity=0;
+        console.log(`quanity: ${cartQuanity}`);">reset</button>
+
+        <script>   
+        let cartQuanity=0;      
+        // let variable1=3;
+        // let $name = 5;
+        // let _name =6;
+        // console.log(_name);   
+        const a = 1234;
+        var b = 33; 
+        console.log(typeof a)
+        // var has issue but it is same as let
+        // a=3; not possible only in let we can change after wards
+        console.log(a);
+        </script>
+        
+    </body>
+</html>

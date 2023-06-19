@@ -1,0 +1,37 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>eventss</title>
+</head>
+<body>
+<button id="alertbtn">click do get alert!!</button>
+<input id="inputs" > 
+<p id="p"></p>
+    <script>
+
+        function btnclick()
+        {
+            alert('button was clicked');
+        }
+        function inputes()
+        {
+            if (event.keyCode == 13)
+            {   
+                alert('entered');
+                p.textContent= inputss.value;
+                console.log(inputss.value);
+                inputss.value = "";
+
+            }
+        }
+
+        let btn = document.getElementById('alertbtn');
+        let inputss = document.getElementById('inputs');
+        // const values = inputss.value;
+        inputss.addEventListener("keypress",inputes);
+        btn.addEventListener('click',btnclick);
+        let p = document.getElementById('p');
+    </script>
+</body>
+ 
+</html>
